@@ -16,7 +16,12 @@ extension Favorites {
         return NSFetchRequest<Favorites>(entityName: "Favorites")
     }
 
-    @NSManaged public var movie_id: Int16
+    @NSManaged public var movie_id: String?
+    @NSManaged public var path: String?
+    @NSManaged public var overview: String?
+    @NSManaged public var rate: String?
+    @NSManaged public var title: String?
+    @NSManaged public var release_date: String?
 
 }
 

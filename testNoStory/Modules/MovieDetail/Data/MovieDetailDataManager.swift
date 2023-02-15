@@ -56,7 +56,12 @@ extension MovieDetailDataManager: MovieDetailDataManagerProtocol {
     func saveToFavorites(movie: Movie, onSuccess: @escaping (Bool) -> Void) {
         let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
         let newFavorites = Favorites(context: managedContext)
-        newFavorites.setValue(movie.id, forKey: #keyPath(Favorites.movie_id))
+        newFavorites.setValue(String(movie.id ?? 0), forKey: #keyPath(Favorites.movie_id))
+        newFavorites.setValue(String(movie.title ?? ""), forKey: #keyPath(Favorites.title))
+        newFavorites.setValue(String(movie.popularity ?? 0.0), forKey: #keyPath(Favorites.rate))
+        newFavorites.setValue(String(movie.overview ?? ""), forKey: #keyPath(Favorites.overview))
+        newFavorites.setValue(String(movie.posterPath ?? ""), forKey: #keyPath(Favorites.path))
+        newFavorites.setValue(String(movie.releaseDate ?? ""), forKey: #keyPath(Favorites.release_date))
         AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
         onSuccess(true)
     }

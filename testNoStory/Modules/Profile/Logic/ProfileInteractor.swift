@@ -33,6 +33,7 @@ extension ProfileInteractor: ProfileInteractorProtocol {
     func fetchToGetMovies(onSuccess: @escaping () -> Void, onError: @escaping (Error) -> Void) {
         dataManager.retrieveMoviesFromDB { moviesResult in
             self.movies = moviesResult
+            onSuccess()
         } onError: { error in
             onError(error)
         }

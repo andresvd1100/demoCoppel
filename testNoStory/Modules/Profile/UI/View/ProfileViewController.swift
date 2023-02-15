@@ -68,6 +68,7 @@ class ProfileViewController: UIViewController {
 
 extension ProfileViewController: ProfileViewControllerProtocol {
     func updateView() {
+        items = presenter.movies
         collectionView.reloadData()
     }
     
@@ -76,7 +77,7 @@ extension ProfileViewController: ProfileViewControllerProtocol {
 
 extension ProfileViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter.movies.count
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

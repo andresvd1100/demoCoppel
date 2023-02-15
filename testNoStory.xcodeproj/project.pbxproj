@@ -66,8 +66,6 @@
 		41FAEB35299C49680093B6DC /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FAEB33299C49680093B6DC /* CharacterCell.xib */; };
 		41FAEB37299C4BED0093B6DC /* ExtensionUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB36299C4BED0093B6DC /* ExtensionUITableViewCell.swift */; };
 		41FAEB3A299C6C540093B6DC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB39299C6C540093B6DC /* CoreDataStack.swift */; };
-		41FAEB55299C72F30093B6DC /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB53299C72F30093B6DC /* Favorites+CoreDataClass.swift */; };
-		41FAEB56299C72F30093B6DC /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB54299C72F30093B6DC /* Favorites+CoreDataProperties.swift */; };
 		41FAEB67299C78B60093B6DC /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB5C299C78B60093B6DC /* ProfilePresenter.swift */; };
 		41FAEB68299C78B60093B6DC /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB5E299C78B60093B6DC /* ProfileRouter.swift */; };
 		41FAEB69299C78B60093B6DC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB60299C78B60093B6DC /* ProfileViewController.swift */; };
@@ -76,6 +74,8 @@
 		41FAEB6C299C78B60093B6DC /* ProfileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB66299C78B60093B6DC /* ProfileDataManager.swift */; };
 		41FAEB6E299C78D20093B6DC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FAEB6D299C78D20093B6DC /* ProfileViewController.xib */; };
 		41FAEB70299C842C0093B6DC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB6F299C842C0093B6DC /* Singleton.swift */; };
+		41FAEB77299C92AE0093B6DC /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB75299C92AE0093B6DC /* Favorites+CoreDataClass.swift */; };
+		41FAEB78299C92AE0093B6DC /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB76299C92AE0093B6DC /* Favorites+CoreDataProperties.swift */; };
 		42A1B56A77DF792CC6B31719 /* Pods_testNoStory_testNoStoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D961B7CD52F35DFA03FEE007 /* Pods_testNoStory_testNoStoryUITests.framework */; };
 		601BF1EF9C67D86E27A94DEC /* Pods_testNoStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4F0B9C74A57D9EBF15B620 /* Pods_testNoStory.framework */; };
 		A54652CBF45569358713BB71 /* Pods_testNoStoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7CD20628697F2175762BFF /* Pods_testNoStoryTests.framework */; };
@@ -164,8 +164,6 @@
 		41FAEB33299C49680093B6DC /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		41FAEB36299C4BED0093B6DC /* ExtensionUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUITableViewCell.swift; sourceTree = "<group>"; };
 		41FAEB39299C6C540093B6DC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		41FAEB53299C72F30093B6DC /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
-		41FAEB54299C72F30093B6DC /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		41FAEB5C299C78B60093B6DC /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		41FAEB5E299C78B60093B6DC /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		41FAEB60299C78B60093B6DC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +172,8 @@
 		41FAEB66299C78B60093B6DC /* ProfileDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataManager.swift; sourceTree = "<group>"; };
 		41FAEB6D299C78D20093B6DC /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		41FAEB6F299C842C0093B6DC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		41FAEB75299C92AE0093B6DC /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		41FAEB76299C92AE0093B6DC /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		453E1CBB73CFC778A9171CEF /* Pods-testNoStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testNoStory.debug.xcconfig"; path = "Target Support Files/Pods-testNoStory/Pods-testNoStory.debug.xcconfig"; sourceTree = "<group>"; };
 		4E4F0B9C74A57D9EBF15B620 /* Pods_testNoStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testNoStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E524D79E60DB14D029292D9 /* Pods-testNoStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testNoStoryTests.release.xcconfig"; path = "Target Support Files/Pods-testNoStoryTests/Pods-testNoStoryTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -623,8 +623,8 @@
 		41FAEB38299C6BFF0093B6DC /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				41FAEB53299C72F30093B6DC /* Favorites+CoreDataClass.swift */,
-				41FAEB54299C72F30093B6DC /* Favorites+CoreDataProperties.swift */,
+				41FAEB75299C92AE0093B6DC /* Favorites+CoreDataClass.swift */,
+				41FAEB76299C92AE0093B6DC /* Favorites+CoreDataProperties.swift */,
 				41FAEB39299C6C540093B6DC /* CoreDataStack.swift */,
 			);
 			path = CoreData;
@@ -1000,6 +1000,7 @@
 				41BB3FC9299B33AA0036DDFF /* ExtensionUIImage.swift in Sources */,
 				41FAEB70299C842C0093B6DC /* Singleton.swift in Sources */,
 				41F7333A299AFB3B00067133 /* MoviesDataManager.swift in Sources */,
+				41FAEB78299C92AE0093B6DC /* Favorites+CoreDataProperties.swift in Sources */,
 				41BB3FE6299C28BF0036DDFF /* DiscoverMovie.swift in Sources */,
 				41BB3FBE299AFDD00036DDFF /* MovieCell.swift in Sources */,
 				41F4D59629972B4300328311 /* testNoStory.xcdatamodeld in Sources */,
@@ -1010,6 +1011,7 @@
 				41FAEB34299C49680093B6DC /* CharacterCell.swift in Sources */,
 				41F4D58E29972B4300328311 /* SceneDelegate.swift in Sources */,
 				41F4D5CF29972E8600328311 /* LoginPresenter.swift in Sources */,
+				41FAEB77299C92AE0093B6DC /* Favorites+CoreDataClass.swift in Sources */,
 				41F4D5EE299776B300328311 /* String+Validator.swift in Sources */,
 				414191832998B55E00DC7469 /* Request.swift in Sources */,
 				41F4D5D329972E8600328311 /* LoginInteractor.swift in Sources */,
@@ -1020,11 +1022,9 @@
 				414191862999FEBF00DC7469 /* LoginResponse.swift in Sources */,
 				41BB3FDD299C1DFD0036DDFF /* MovieDetailRouter.swift in Sources */,
 				41F73339299AFB3B00067133 /* MoviesInteractor.swift in Sources */,
-				41FAEB56299C72F30093B6DC /* Favorites+CoreDataProperties.swift in Sources */,
 				41F73335299AFB3B00067133 /* MoviesPresenter.swift in Sources */,
 				41F73337299AFB3B00067133 /* MoviesViewController.swift in Sources */,
 				41FAEB6B299C78B60093B6DC /* ProfileInteractor.swift in Sources */,
-				41FAEB55299C72F30093B6DC /* Favorites+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,25 +24,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-WW-kBK">
-                    <rect key="frame" x="30" y="89" width="200" height="200"/>
+                    <rect key="frame" x="30" y="89" width="170" height="170"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="LW2-nK-cAd"/>
-                        <constraint firstAttribute="height" constant="200" id="ZZH-th-EBf"/>
+                        <constraint firstAttribute="width" constant="170" id="LW2-nK-cAd"/>
+                        <constraint firstAttribute="height" constant="170" id="ZZH-th-EBf"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flU-51-P3j">
-                    <rect key="frame" x="232" y="89" width="159" height="21"/>
+                    <rect key="frame" x="202" y="89" width="189" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP0-SV-uB7">
-                    <rect key="frame" x="232" y="257.33333333333331" width="159" height="35"/>
+                    <rect key="frame" x="202" y="227.33333333333334" width="189" height="35.000000000000028"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-l7-jJL">
-                    <rect key="frame" x="0.0" y="312.33333333333326" width="393" height="505.66666666666674"/>
+                    <rect key="frame" x="0.0" y="282.33333333333331" width="393" height="535.66666666666674"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lli-Md-xWc">
                         <size key="itemSize" width="128" height="128"/>

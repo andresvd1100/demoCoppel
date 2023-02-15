@@ -26,10 +26,9 @@ extension ProfileDataManager: ProfileDataManagerProtocol {
             let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
             let results = try managedContext.fetch(favoritesFetch)
             ids = results
+            
             for id in ids{
-                MovieMDB.movie(movieID: Int(id.movie_id)) { clientReturn, data in
-                    movies.append(Movie(id: data?.id, title: data?.title, releaseDate: data?.release_date, popularity: data?.popularity, overview: data?.overview, posterPath: String(format: "%@%@", Services.getBaseURLImages(),data?.poster_path ?? "")))
-                }
+                movies.append(Movie(id: Int(id.movie_id ?? "0"), title: id.title, releaseDate: id.release_date, popularity: Double(id.rate ?? "0.0"), overview: id.overview, posterPath: id.path))
             }
             onSuccess(movies)
         } catch let error as NSError {
