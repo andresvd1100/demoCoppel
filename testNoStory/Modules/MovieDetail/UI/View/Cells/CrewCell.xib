@@ -34,6 +34,7 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="tnk-JH-Zxe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="A6U-qE-vKL"/>
                     <constraint firstAttribute="bottom" secondItem="EG5-Yh-GTS" secondAttribute="bottom" id="BoM-ZT-xuY"/>

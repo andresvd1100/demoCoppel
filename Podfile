@@ -2,7 +2,6 @@
 platform :ios, '12.0'
 use_frameworks!
 def libraries
-  pod 'Alamofire'
   pod 'MKProgress'
   pod 'Kingfisher', '~> 7.0'
   pod "TMDBSwift"

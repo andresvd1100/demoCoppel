@@ -23,7 +23,7 @@ class CrewCell: UITableViewCell {
     }
     @IBOutlet weak var lblTitle: UILabel!{
         didSet{
-            configureLabel(label: lblTitle, withText: "", color: Style.colorSystem.neutral.white, fontSize: 14.0)
+            configureLabel(label: lblTitle, withText: "", color: Style.colorSystem.neutral.white, fontSize: 22.0)
         }
     }
     
@@ -43,6 +43,7 @@ class CrewCell: UITableViewCell {
     }
     
     func configureCell(items: [Crew], title: String){
+        self.contentView.backgroundColor = Style.colorSystem.primary.blue0
         self.items = items
         self.lblTitle.text = title
         let nibCell = UINib(nibName: cellIdentifier, bundle: Bundle.main)
@@ -69,6 +70,6 @@ extension CrewCell: UICollectionViewDataSource{
 
 extension CrewCell : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100.0, height: 150.0)
+        return CGSize(width: 115.0, height: 170.0)
     }
 }

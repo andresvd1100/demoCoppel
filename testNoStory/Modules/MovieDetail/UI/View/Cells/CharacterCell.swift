@@ -11,17 +11,18 @@ class CharacterCell: UICollectionViewCell {
 
     @IBOutlet weak var lblWork: UILabel!{
         didSet{
-            configureLabel(label: lblWork, withText: "", color: Style.colorSystem.neutral.black, fontSize: 12.0)
+            configureLabel(label: lblWork, withText: "", color: Style.colorSystem.primary.green0, fontSize: 10.0, aligment: .center)
         }
     }
     @IBOutlet weak var lblName: UILabel!{
         didSet{
-            configureLabel(label: lblName, withText: "", color: Style.colorSystem.neutral.black, fontSize: 14.0, isBold: true)
+            configureLabel(label: lblName, withText: "", color: Style.colorSystem.neutral.gray2, fontSize: 12.0,aligment: .center, isBold: true)
         }
     }
     @IBOutlet weak var imgCharacter: UIImageView!{
         didSet{
             imgCharacter.contentMode = .scaleAspectFit
+            imgCharacter.setupRoundedCorners(radius: 5.0)
         }
     }
     override func awakeFromNib() {
@@ -30,6 +31,8 @@ class CharacterCell: UICollectionViewCell {
     }
     
     func configureCell(crew: Crew){
+        self.contentView.backgroundColor = Style.colorSystem.neutral.white
+        self.contentView.setupRoundedCorners(radius: 5.0)
         lblName.text = crew.name
         lblWork.text = crew.character
         if let url = URL(string: crew.imagePath ?? "") {

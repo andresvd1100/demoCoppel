@@ -60,6 +60,7 @@ class LoginViewController: UIViewController {
         if(user.isEmpty || pass.isEmpty){
             errorMessage.text = Constants.ValidatorMessages.loginInvalidEmpty
         }else{
+            showLoadingView()
             presenter.prepareForLogin(user: user, password: String(format: "%@", textPassword.text ?? ""))
         }
     }

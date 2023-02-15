@@ -15,7 +15,11 @@ protocol MovieDetailViewControllerProtocol: AnyObject {
 
 class MovieDetailViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!{
+        didSet{
+            tableView.backgroundColor = Style.colorSystem.neutral.transparent
+        }
+    }
     @IBOutlet weak var container: UIView!{
         didSet{
             container.backgroundColor = Style.colorSystem.neutral.transparent
@@ -119,7 +123,7 @@ extension MovieDetailViewController: MovieDetailViewControllerProtocol {
 
 extension MovieDetailViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150.0
+        return 180.0
     }
 }
 

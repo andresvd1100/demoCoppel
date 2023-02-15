@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MKProgress
 
 protocol LoginPresenterProtocol {
     func showScreen()
@@ -44,11 +45,13 @@ extension LoginPresenter: LoginPresenterProtocol {
     func prepareForLogin(user: String, password: String) {
         interactor.fetchToLoginService(username: user, password: password) {
             DispatchQueue.main.async { [weak self] in
+                MKProgress.hide()
                 self?.router.openMoviesView()
             }
         } onError: { error in
             print("Error")
             DispatchQueue.main.async { [weak self] in
+                MKProgress.hide()
                 self?.viewProtocol?.updateWithError(errorMessage: error)
             }
         }
