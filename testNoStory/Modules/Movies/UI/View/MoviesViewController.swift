@@ -59,7 +59,7 @@ class MoviesViewController: UIViewController {
         collectionView.delegate = self
         collectionView.reloadData()
         presenter.prepareForGetMovieList(type: 0)
-        quitBack()
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
     
     @objc func segmentedValueChanged(_ sender:UISegmentedControl!){

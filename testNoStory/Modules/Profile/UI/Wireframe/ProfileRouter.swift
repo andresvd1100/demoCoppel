@@ -30,13 +30,13 @@ extension ProfileRouter: ProfileRouterProtocol {
     }
     
     func logOut() {
-        
-       
         let navigation = UINavigationController()
+        guard let controller = baseController as? UINavigationController else { return }
         Singleton.shared.ereaseAll()
         let login = LoginModule(baseViewController: navigation)
-        baseController?.dismiss(animated: true, completion: {
-            login.showScreen()
-        })
+        controller.popToRootViewController(animated: true)
+        Utils.changeRootViewControllerWith(controller: navigation)
+        login.showScreen()
+        
     }
 }

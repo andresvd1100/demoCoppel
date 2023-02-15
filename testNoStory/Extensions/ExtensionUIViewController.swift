@@ -57,9 +57,10 @@ extension UIViewController{
     }
     
     func quitBack(){
-        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-        self.navigationItem.backButtonTitle = " "
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationController?.navigationItem.hidesBackButton = true
     }
     
     @objc
