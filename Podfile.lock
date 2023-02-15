@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.2)
+  - Kingfisher (7.3.1)
+  - MKProgress (1.1.0)
+  - TMDBSwift (0.5.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher (~> 7.0)
+  - MKProgress
+  - TMDBSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - MKProgress
+    - TMDBSwift
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Kingfisher: f411ab4902e733fc0c40522920fb5a236d7a7334
+  MKProgress: 260d166200323f3d991190a73ab2dc3a04b0f52f
+  TMDBSwift: 9220f3dcee23372c05b92f8c111f5f4c37185aee
+
+PODFILE CHECKSUM: 1c6d60e18fde877e7bfb3abbbe08853bbf51e08d
+
+COCOAPODS: 1.11.3

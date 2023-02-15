@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2DBBB7F9-7023-4226-8586-12A1276B33C0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BCCA532-E479-4E52-B327-CA2DBDA30A99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Request/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "makeRequest(endpoint:headers:model:successRequest:errorCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "409B9940-5CFE-4FB9-B6F6-3D0A332287DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Modules/Login/Logic/LoginInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchToLoginService(username:password:onSuccess:onError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D746C27-4A56-4A46-A94E-3153AF157F33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Modules/Login/Logic/LoginInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchToLoginService(username:password:onSuccess:onError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F063F235-82F1-403A-9763-99F04151C440"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Modules/Movies/Data/MoviesDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "convertMoviesMDBToMovies(movies:onSucess:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D296569-E2A2-49D6-9666-95805697D023"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Extensions/ExtensionUIImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "loadImage(url:placeholder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8D296569-E2A2-49D6-9666-95805697D023 - 54f86a753a451f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIImageView.loadImage(url: Swift.Optional&lt;Foundation.URL&gt;, placeholder: Swift.Optional&lt;__C.UIImage&gt;) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Extensions/ExtensionUIImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "343">
+               </Location>
+               <Location
+                  uuid = "8D296569-E2A2-49D6-9666-95805697D023 - 54f86a753a451f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIImageView.loadImage(url: Swift.Optional&lt;Foundation.URL&gt;, placeholder: Swift.Optional&lt;__C.UIImage&gt;) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Extensions/ExtensionUIImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "434">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D066140-39D5-4988-A59B-9539A49C5295"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Request/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "makeRequestPost(endpoint:headers:params:model:successRequest:errorCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B20EAE0D-B9F6-45CF-BC72-E8DFD80599B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Request/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "makeRequestPost(endpoint:headers:params:model:successRequest:errorCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B20EAE0D-B9F6-45CF-BC72-E8DFD80599B2 - ab962bfefdb777c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in testNoStory.Request.makeRequestPost&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endpoint: Swift.String, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, params: Swift.Dictionary&lt;Swift.String, Any&gt;, model: &#x3c4;_0_0.Type, successRequest: (&#x3c4;_0_0) -&gt; (), errorCompletion: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Request/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "425">
+               </Location>
+               <Location
+                  uuid = "B20EAE0D-B9F6-45CF-BC72-E8DFD80599B2 - ab962bfefdb777c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in testNoStory.Request.makeRequestPost&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endpoint: Swift.String, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, params: Swift.Dictionary&lt;Swift.String, Any&gt;, model: &#x3c4;_0_0.Type, successRequest: (&#x3c4;_0_0) -&gt; (), errorCompletion: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Request/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "1132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A89CF65D-80FB-4F48-92F2-0A4BA49EFCBC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Modules/Login/Data/LoginDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchToLoginService(user:pass:onSuccess:onBadResponse:onError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A89CF65D-80FB-4F48-92F2-0A4BA49EFCBC - f50628a4dde75d6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (testNoStory.LoginResponse) -&gt; () in testNoStory.LoginDataManager.fetchToLoginService(user: Swift.String, pass: Swift.String, onSuccess: (testNoStory.LoginResponse) -&gt; (), onBadResponse: (Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; (), onError: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Modules/Login/Data/LoginDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1326">
+               </Location>
+               <Location
+                  uuid = "A89CF65D-80FB-4F48-92F2-0A4BA49EFCBC - d2381964b6f4e39d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (testNoStory.LoginResponse) -&gt; () in closure #1 (testNoStory.LoginResponse) -&gt; () in testNoStory.LoginDataManager.fetchToLoginService(user: Swift.String, pass: Swift.String, onSuccess: (testNoStory.LoginResponse) -&gt; (), onBadResponse: (Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; (), onError: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Modules/Login/Data/LoginDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "145">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42F88126-CBC8-4E02-AE67-DFBE803D6F0C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Request/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "makeRequestPost(endpoint:headers:params:model:successRequest:errorCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "42F88126-CBC8-4E02-AE67-DFBE803D6F0C - 1936b1b8424366b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testNoStory.Request.makeRequestPost&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endpoint: Swift.String, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, params: Swift.Dictionary&lt;Swift.String, Any&gt;, model: &#x3c4;_0_0.Type, successRequest: (&#x3c4;_0_0) -&gt; (), errorCompletion: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Request/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1674">
+               </Location>
+               <Location
+                  uuid = "42F88126-CBC8-4E02-AE67-DFBE803D6F0C - ab962bfefdb77417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in testNoStory.Request.makeRequestPost&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endpoint: Swift.String, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, params: Swift.Dictionary&lt;Swift.String, Any&gt;, model: &#x3c4;_0_0.Type, successRequest: (&#x3c4;_0_0) -&gt; (), errorCompletion: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Request/Request.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "362">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D225711-B9FD-4F07-94A4-3623CE035274"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Request/Request.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "makeRequestPost(endpoint:headers:params:model:successRequest:errorCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F11F352-0480-451F-8E71-756593AB8BF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Extensions/ExtensionUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "quitBack()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5FD7ECF-1E43-4C46-9FD0-24EC1A67994E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testNoStory/Modules/MovieDetail/Data/MovieDetailDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getDiscoverData(movie:onScucess:onError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B5FD7ECF-1E43-4C46-9FD0-24EC1A67994E - db20d8f8103cbdf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testNoStory.MovieDetailDataManager.getDiscoverData(movie: testNoStory.Movie, onScucess: (testNoStory.DiscoverMovie) -&gt; (), onError: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Modules/MovieDetail/Data/MovieDetailDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  uuid = "B5FD7ECF-1E43-4C46-9FD0-24EC1A67994E - 686bcba14a67fc1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TMDBSwift.ClientReturn, Swift.Optional&lt;TMDBSwift.MovieDetailedMDB&gt;) -&gt; () in testNoStory.MovieDetailDataManager.getDiscoverData(movie: testNoStory.Movie, onScucess: (testNoStory.DiscoverMovie) -&gt; (), onError: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "testNoStory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andres/Documents/Trabajo/DEMOS/iOS/testNoStory/testNoStory/Modules/MovieDetail/Data/MovieDetailDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
