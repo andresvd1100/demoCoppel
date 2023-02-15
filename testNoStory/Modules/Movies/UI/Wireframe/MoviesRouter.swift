@@ -11,6 +11,7 @@ import UIKit
 protocol MoviesRouterProtocol {
     func showScreen(presenter: MoviesPresenterProtocol)
     func openMovieDetail(movie: Movie)
+    func openProfile()
 }
 
 class MoviesRouter {
@@ -32,6 +33,12 @@ extension MoviesRouter: MoviesRouterProtocol {
     func openMovieDetail(movie: Movie) {
         guard let controller = baseController as? UINavigationController else { return }
         let module = MovieDetailModule(baseViewController: controller, movie: movie)
+        module.showScreen()
+    }
+    
+    func openProfile() {
+        guard let controller = baseController as? UINavigationController else { return }
+        let module = ProfileModule(baseViewController: controller)
         module.showScreen()
     }
 }

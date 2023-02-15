@@ -15,6 +15,7 @@ protocol MovieDetailInteractorProtocol {
     var cast: [Crew]? { get set }
     func fetchToGetDataMovie(onSuccess: @escaping() -> Void)
     func fetchToGetCrew(onSuccess: @escaping() -> Void)
+    func saveMovieToFavorites(onSuccess: @escaping(Bool) -> Void)
 }
 
 class MovieDetailInteractor {
@@ -87,6 +88,12 @@ extension MovieDetailInteractor: MovieDetailInteractorProtocol {
             print("\(error)")
         }
 
+    }
+    
+    func saveMovieToFavorites(onSuccess: @escaping(Bool) -> Void) {
+        dataManager.saveToFavorites(movie: self.movie) { result in
+            onSuccess(result)
+        }
     }
     
 }

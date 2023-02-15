@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="testNoStory" customModuleProvider="target">
             <connections>
+                <outlet property="btnAddFavorites" destination="C4G-4S-N99" id="vMk-hv-gfh"/>
                 <outlet property="container" destination="0jt-NI-KNr" id="AEb-at-Vol"/>
                 <outlet property="imgViewMovie" destination="BJj-dq-xch" id="dAu-fw-mYq"/>
                 <outlet property="lblDuration" destination="iw6-UT-eCC" id="pSp-cD-cN4"/>
@@ -105,27 +106,32 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtX-Lj-X4C">
-                                    <rect key="frame" x="2" y="263" width="187.33333333333334" height="20.333333333333314"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4G-4S-N99">
+                                    <rect key="frame" x="4" y="259" width="183.33333333333334" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="RaM-dc-XXa"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <connections>
+                                        <action selector="addFavorites:" destination="-1" eventType="touchUpInside" id="noS-iD-5pA"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="yLd-OG-rFs" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="0IV-cB-KpX"/>
                                 <constraint firstItem="iw6-UT-eCC" firstAttribute="top" secondItem="yum-LN-Zv4" secondAttribute="bottom" constant="8" id="1ia-JC-Mz1"/>
                                 <constraint firstItem="yum-LN-Zv4" firstAttribute="top" secondItem="ZqQ-Yo-uuT" secondAttribute="bottom" constant="8" id="7NP-Zd-hVq"/>
+                                <constraint firstItem="C4G-4S-N99" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="4" id="C5p-Xj-3W7"/>
                                 <constraint firstAttribute="trailing" secondItem="sgR-qm-bJo" secondAttribute="trailing" constant="2" id="CAp-8Q-Pm6"/>
                                 <constraint firstItem="yLd-OG-rFs" firstAttribute="top" secondItem="ody-WO-mCv" secondAttribute="bottom" constant="8" id="Drp-f1-5GH"/>
                                 <constraint firstAttribute="trailing" secondItem="yum-LN-Zv4" secondAttribute="trailing" constant="2" id="Gie-a7-8Z6"/>
                                 <constraint firstItem="ody-WO-mCv" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="L4e-oD-MdM"/>
-                                <constraint firstItem="QtX-Lj-X4C" firstAttribute="top" secondItem="yLd-OG-rFs" secondAttribute="bottom" constant="8" id="MYY-J1-4vL"/>
                                 <constraint firstItem="UCt-dr-X4f" firstAttribute="top" secondItem="iw6-UT-eCC" secondAttribute="bottom" constant="8" id="Nfd-Kz-10D"/>
                                 <constraint firstItem="iw6-UT-eCC" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="OYt-9l-CI6"/>
                                 <constraint firstItem="sgR-qm-bJo" firstAttribute="top" secondItem="4IV-zF-AzM" secondAttribute="bottom" constant="8" id="SLc-9m-Dts"/>
-                                <constraint firstItem="QtX-Lj-X4C" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="TDd-ia-Le0"/>
+                                <constraint firstItem="C4G-4S-N99" firstAttribute="top" secondItem="yLd-OG-rFs" secondAttribute="bottom" constant="4" id="SlB-Xp-K7K"/>
                                 <constraint firstAttribute="trailing" secondItem="ody-WO-mCv" secondAttribute="trailing" constant="2" id="Tkm-8K-UUf"/>
                                 <constraint firstItem="ZqQ-Yo-uuT" firstAttribute="top" secondItem="0jt-NI-KNr" secondAttribute="top" constant="8" id="U6h-3i-sZG"/>
                                 <constraint firstItem="ody-WO-mCv" firstAttribute="top" secondItem="mRT-Jb-Pax" secondAttribute="bottom" constant="8" id="W6K-VF-hfy"/>
@@ -137,13 +143,13 @@
                                 <constraint firstAttribute="trailing" secondItem="ZqQ-Yo-uuT" secondAttribute="trailing" constant="2" id="m68-Nh-MgI"/>
                                 <constraint firstItem="4IV-zF-AzM" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="nLc-BE-MIq"/>
                                 <constraint firstItem="4IV-zF-AzM" firstAttribute="top" secondItem="UCt-dr-X4f" secondAttribute="bottom" constant="8" id="nc5-0z-MDr"/>
+                                <constraint firstAttribute="trailing" secondItem="C4G-4S-N99" secondAttribute="trailing" constant="4" id="oj0-Ut-Uhu"/>
                                 <constraint firstItem="UCt-dr-X4f" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="pqy-JP-tXc"/>
                                 <constraint firstItem="yum-LN-Zv4" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="qvG-Ia-cCQ"/>
                                 <constraint firstAttribute="trailing" secondItem="UCt-dr-X4f" secondAttribute="trailing" constant="2" id="sih-jA-a2P"/>
                                 <constraint firstItem="sgR-qm-bJo" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="w1Z-Us-Imr"/>
                                 <constraint firstItem="ZqQ-Yo-uuT" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="w9Q-s7-itZ"/>
                                 <constraint firstAttribute="trailing" secondItem="yLd-OG-rFs" secondAttribute="trailing" constant="2" id="ybr-ZY-EM1"/>
-                                <constraint firstAttribute="trailing" secondItem="QtX-Lj-X4C" secondAttribute="trailing" constant="2" id="ycF-qO-apb"/>
                             </constraints>
                         </view>
                     </subviews>

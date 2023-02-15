@@ -65,6 +65,17 @@
 		41FAEB34299C49680093B6DC /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB32299C49680093B6DC /* CharacterCell.swift */; };
 		41FAEB35299C49680093B6DC /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FAEB33299C49680093B6DC /* CharacterCell.xib */; };
 		41FAEB37299C4BED0093B6DC /* ExtensionUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB36299C4BED0093B6DC /* ExtensionUITableViewCell.swift */; };
+		41FAEB3A299C6C540093B6DC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB39299C6C540093B6DC /* CoreDataStack.swift */; };
+		41FAEB55299C72F30093B6DC /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB53299C72F30093B6DC /* Favorites+CoreDataClass.swift */; };
+		41FAEB56299C72F30093B6DC /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB54299C72F30093B6DC /* Favorites+CoreDataProperties.swift */; };
+		41FAEB67299C78B60093B6DC /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB5C299C78B60093B6DC /* ProfilePresenter.swift */; };
+		41FAEB68299C78B60093B6DC /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB5E299C78B60093B6DC /* ProfileRouter.swift */; };
+		41FAEB69299C78B60093B6DC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB60299C78B60093B6DC /* ProfileViewController.swift */; };
+		41FAEB6A299C78B60093B6DC /* ProfileModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB62299C78B60093B6DC /* ProfileModule.swift */; };
+		41FAEB6B299C78B60093B6DC /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB64299C78B60093B6DC /* ProfileInteractor.swift */; };
+		41FAEB6C299C78B60093B6DC /* ProfileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB66299C78B60093B6DC /* ProfileDataManager.swift */; };
+		41FAEB6E299C78D20093B6DC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FAEB6D299C78D20093B6DC /* ProfileViewController.xib */; };
+		41FAEB70299C842C0093B6DC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAEB6F299C842C0093B6DC /* Singleton.swift */; };
 		42A1B56A77DF792CC6B31719 /* Pods_testNoStory_testNoStoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D961B7CD52F35DFA03FEE007 /* Pods_testNoStory_testNoStoryUITests.framework */; };
 		601BF1EF9C67D86E27A94DEC /* Pods_testNoStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4F0B9C74A57D9EBF15B620 /* Pods_testNoStory.framework */; };
 		A54652CBF45569358713BB71 /* Pods_testNoStoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7CD20628697F2175762BFF /* Pods_testNoStoryTests.framework */; };
@@ -152,6 +163,17 @@
 		41FAEB32299C49680093B6DC /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		41FAEB33299C49680093B6DC /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		41FAEB36299C4BED0093B6DC /* ExtensionUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUITableViewCell.swift; sourceTree = "<group>"; };
+		41FAEB39299C6C540093B6DC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		41FAEB53299C72F30093B6DC /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		41FAEB54299C72F30093B6DC /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		41FAEB5C299C78B60093B6DC /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		41FAEB5E299C78B60093B6DC /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		41FAEB60299C78B60093B6DC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		41FAEB62299C78B60093B6DC /* ProfileModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModule.swift; sourceTree = "<group>"; };
+		41FAEB64299C78B60093B6DC /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		41FAEB66299C78B60093B6DC /* ProfileDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataManager.swift; sourceTree = "<group>"; };
+		41FAEB6D299C78D20093B6DC /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		41FAEB6F299C842C0093B6DC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		453E1CBB73CFC778A9171CEF /* Pods-testNoStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testNoStory.debug.xcconfig"; path = "Target Support Files/Pods-testNoStory/Pods-testNoStory.debug.xcconfig"; sourceTree = "<group>"; };
 		4E4F0B9C74A57D9EBF15B620 /* Pods_testNoStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testNoStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E524D79E60DB14D029292D9 /* Pods-testNoStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testNoStoryTests.release.xcconfig"; path = "Target Support Files/Pods-testNoStoryTests/Pods-testNoStoryTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				41BB3FC3299B113F0036DDFF /* Utils.swift */,
+				41FAEB6F299C842C0093B6DC /* Singleton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -337,6 +360,7 @@
 		41F4D58A29972B4300328311 /* testNoStory */ = {
 			isa = PBXGroup;
 			children = (
+				41FAEB38299C6BFF0093B6DC /* CoreData */,
 				41BB3FC2299B112A0036DDFF /* Utils */,
 				414191842999FEA300DC7469 /* Responses */,
 				4141917F2998B1CC00DC7469 /* Request */,
@@ -375,6 +399,7 @@
 		41F4D5BE29972DB900328311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41FAEB59299C78B60093B6DC /* Profile */,
 				41BB3FCE299C1DFD0036DDFF /* MovieDetail */,
 				41F73327299AFB3B00067133 /* Movies */,
 				41F4D5C129972E8500328311 /* Login */,
@@ -595,6 +620,86 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		41FAEB38299C6BFF0093B6DC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB53299C72F30093B6DC /* Favorites+CoreDataClass.swift */,
+				41FAEB54299C72F30093B6DC /* Favorites+CoreDataProperties.swift */,
+				41FAEB39299C6C540093B6DC /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		41FAEB59299C78B60093B6DC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB5A299C78B60093B6DC /* UI */,
+				41FAEB61299C78B60093B6DC /* Module */,
+				41FAEB63299C78B60093B6DC /* Logic */,
+				41FAEB65299C78B60093B6DC /* Data */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		41FAEB5A299C78B60093B6DC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB5B299C78B60093B6DC /* Presenter */,
+				41FAEB5D299C78B60093B6DC /* Wireframe */,
+				41FAEB5F299C78B60093B6DC /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		41FAEB5B299C78B60093B6DC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB5C299C78B60093B6DC /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41FAEB5D299C78B60093B6DC /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB5E299C78B60093B6DC /* ProfileRouter.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		41FAEB5F299C78B60093B6DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB60299C78B60093B6DC /* ProfileViewController.swift */,
+				41FAEB6D299C78D20093B6DC /* ProfileViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41FAEB61299C78B60093B6DC /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB62299C78B60093B6DC /* ProfileModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		41FAEB63299C78B60093B6DC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB64299C78B60093B6DC /* ProfileInteractor.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		41FAEB65299C78B60093B6DC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				41FAEB66299C78B60093B6DC /* ProfileDataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		ACC199AED0FC08A091BA23A4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -735,6 +840,7 @@
 				41F4D5D629972E9D00328311 /* LoginViewController.xib in Resources */,
 				41FAEB31299C48A40093B6DC /* CrewCell.xib in Resources */,
 				41FAEB35299C49680093B6DC /* CharacterCell.xib in Resources */,
+				41FAEB6E299C78D20093B6DC /* ProfileViewController.xib in Resources */,
 				41F7333C299AFB5800067133 /* MoviesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -873,19 +979,26 @@
 				41FAEB37299C4BED0093B6DC /* ExtensionUITableViewCell.swift in Sources */,
 				41F4D5E329976E7C00328311 /* IconCatalog.swift in Sources */,
 				41F4D58C29972B4300328311 /* AppDelegate.swift in Sources */,
+				41FAEB69299C78B60093B6DC /* ProfileViewController.swift in Sources */,
+				41FAEB3A299C6C540093B6DC /* CoreDataStack.swift in Sources */,
 				41F4D5D429972E8600328311 /* LoginDataManager.swift in Sources */,
 				41F4D5E729976E9700328311 /* Style.swift in Sources */,
 				41FAEB2C299C47290093B6DC /* Crew.swift in Sources */,
 				41F4D5D229972E8600328311 /* LoginModule.swift in Sources */,
 				41BB3FC1299B00060036DDFF /* ExtensionCollectionViewCell.swift in Sources */,
+				41FAEB6C299C78B60093B6DC /* ProfileDataManager.swift in Sources */,
 				41FAEB30299C48A40093B6DC /* CrewCell.swift in Sources */,
 				41BB3FDF299C1DFD0036DDFF /* MovieDetailModule.swift in Sources */,
+				41FAEB6A299C78B60093B6DC /* ProfileModule.swift in Sources */,
+				41FAEB67299C78B60093B6DC /* ProfilePresenter.swift in Sources */,
 				41F73336299AFB3B00067133 /* MoviesRouter.swift in Sources */,
 				41BB3FCB299BEC930036DDFF /* ExtensionDictionary.swift in Sources */,
 				41F4D5D029972E8600328311 /* LoginRouter.swift in Sources */,
 				41BB3FE1299C1DFD0036DDFF /* MovieDetailDataManager.swift in Sources */,
 				41BB3FDE299C1DFD0036DDFF /* MovieDetailViewController.swift in Sources */,
+				41FAEB68299C78B60093B6DC /* ProfileRouter.swift in Sources */,
 				41BB3FC9299B33AA0036DDFF /* ExtensionUIImage.swift in Sources */,
+				41FAEB70299C842C0093B6DC /* Singleton.swift in Sources */,
 				41F7333A299AFB3B00067133 /* MoviesDataManager.swift in Sources */,
 				41BB3FE6299C28BF0036DDFF /* DiscoverMovie.swift in Sources */,
 				41BB3FBE299AFDD00036DDFF /* MovieCell.swift in Sources */,
@@ -907,8 +1020,11 @@
 				414191862999FEBF00DC7469 /* LoginResponse.swift in Sources */,
 				41BB3FDD299C1DFD0036DDFF /* MovieDetailRouter.swift in Sources */,
 				41F73339299AFB3B00067133 /* MoviesInteractor.swift in Sources */,
+				41FAEB56299C72F30093B6DC /* Favorites+CoreDataProperties.swift in Sources */,
 				41F73335299AFB3B00067133 /* MoviesPresenter.swift in Sources */,
 				41F73337299AFB3B00067133 /* MoviesViewController.swift in Sources */,
+				41FAEB6B299C78B60093B6DC /* ProfileInteractor.swift in Sources */,
+				41FAEB55299C72F30093B6DC /* Favorites+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

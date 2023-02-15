@@ -11,6 +11,7 @@ import TMDBSwift
 protocol MovieDetailDataManagerProtocol {
     func getDiscoverData(movie: Movie, onScucess: @escaping(DiscoverMovie)-> Void, onError: (Error) -> Void)
     func getCrew(movie: Movie, onSuccess: @escaping([String: [Crew]]) -> Void, onError: (Error) -> Void)
+    func saveToFavorites(movie: Movie, onSuccess: @escaping(Bool) -> Void )
 }
 
 class MovieDetailDataManager {
@@ -46,9 +47,17 @@ extension MovieDetailDataManager: MovieDetailDataManagerProtocol {
                 for cast in credits.cast{
                     mCast.append(Crew(name: cast.name, character: cast.character, imagePath: String(format: "%@%@", Services.getBaseURLImages(),cast.profile_path ?? "")))
                 }
-                var people = ["cast":mCast,"crew":mCrew]
+                let people = ["cast":mCast,"crew":mCrew]
                 onSuccess(people)
             }
         }
+    }
+    
+    func saveToFavorites(movie: Movie, onSuccess: @escaping (Bool) -> Void) {
+        let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
+        let newFavorites = Favorites(context: managedContext)
+        newFavorites.setValue(movie.id, forKey: #keyPath(Favorites.movie_id))
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        onSuccess(true)
     }
 }

@@ -20,6 +20,7 @@ class LoginDataManager: Request {
 extension LoginDataManager: LoginDataManagerProtocol {
     func fetchToLoginService(user: String, pass: String, onSuccess: @escaping (LoginResponse) -> Void, onBadResponse: @escaping (LoginBadResponse) -> Void, onError: @escaping (Error) -> Void) {
         let endpoint = Services.authRequestToken
+        Singleton.shared.email = user
         makeRequest(endpoint: endpoint, headers: ["api_key":Constants.TMDB.apiKey], model: LoginResponse.self) { response in
             print("\(response)")
             let params = [

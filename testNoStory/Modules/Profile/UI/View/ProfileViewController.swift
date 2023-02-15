@@ -1,42 +1,48 @@
 //
-//  MoviesViewController.swift
+//  ProfileViewController.swift
 //  testNoStory
 //
-//  Created by Andres Valerio on 13/02/23.
+//  Created by Andres Valerio on 14/02/23.
 //  
 
 import UIKit
 
-protocol MoviesViewControllerProtocol: AnyObject {
+protocol ProfileViewControllerProtocol: AnyObject {
     func updateView()
 }
 
-class MoviesViewController: UIViewController {
+class ProfileViewController: UIViewController {
     
-    @IBOutlet weak var collectionFlowLayout: UICollectionViewFlowLayout!
+    @IBOutlet weak var lblUser: UILabel!{
+        didSet{
+            configureLabel(label: lblUser, withText: Singleton.shared.email ?? "", color: Style.colorSystem.primary.green0, colorBack: Style.colorSystem.neutral.transparent)
+        }
+    }
+    @IBOutlet weak var btnCloseSession: UIButton!{
+        didSet{
+            configureButton(button: btnCloseSession, title: Constants.ButtonTitles.closeSession, image: nil, backgroundColor: Style.colorSystem.secondary.information, titleColor: Style.colorSystem.secondary.error)
+        }
+    }
+    @IBOutlet weak var imgUser: UIImageView!{
+        didSet{
+            imgUser.makeItCircular()
+            imgUser.image = Style.iconCatalog.profile
+            imgUser.contentMode = .scaleAspectFit
+        }
+    }
     @IBOutlet weak var collectionView: UICollectionView!{
         didSet{
-            collectionView.backgroundColor = Style.colorSystem.neutral.black
+            collectionView.backgroundColor = Style.colorSystem.neutral.transparent
         }
     }
-    @IBOutlet weak var segmentedControl: UISegmentedControl!{
-        didSet{
-            segmentedControl.setTitle(Constants.SegmentedTitles.moviesOption[0], forSegmentAt: 0)
-            segmentedControl.setTitle(Constants.SegmentedTitles.moviesOption[1], forSegmentAt: 1)
-            segmentedControl.setTitle(Constants.SegmentedTitles.moviesOption[2], forSegmentAt: 2)
-            segmentedControl.setTitle(Constants.SegmentedTitles.moviesOption[3], forSegmentAt: 3)
-            segmentedControl.addTarget(self, action: #selector(segmentedValueChanged(_:)), for: .valueChanged)
-            segmentedControl.backgroundColor = Style.colorSystem.neutral.black
-            segmentedControl.tintColor = Style.colorSystem.neutral.gray7
-            segmentedControl.setTitleTextAttributes([.foregroundColor: Style.colorSystem.neutral.gray2], for: .normal)
-        }
-    }
-    private let presenter: MoviesPresenterProtocol
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    private let presenter: ProfilePresenterProtocol
     let identifier = String(describing: MovieCell.self)
     var items: [Movie] = []
-    init(presenter: MoviesPresenterProtocol) {
+    
+    init(presenter: ProfilePresenterProtocol) {
         self.presenter = presenter
-        super.init(nibName: String(describing: MoviesViewController.self), bundle: Bundle.main)
+        super.init(nibName: String(describing: ProfileViewController.self), bundle: Bundle.main)
         self.presenter.setViewProtocol(view: self)
     }
     
@@ -50,35 +56,25 @@ class MoviesViewController: UIViewController {
     }
     
     private func configureView() {
-        self.view.backgroundColor = Style.colorSystem.neutral.black
-        quitBack()
-        configureTitleWithRightButtonItem(title: Constants.Titles.movies, color: Style.colorSystem.primary.green0, aligment: .center, font: 20.0, icon: Style.iconCatalog.menu, action: #selector(openMenu))
+        self.view.backgroundColor = Style.colorSystem.primary.blue0
         let nibCell = UINib(nibName: identifier, bundle: Bundle.main)
         collectionView.register(nibCell, forCellWithReuseIdentifier: identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.reloadData()
-        presenter.prepareForGetMovieList(type: 0)
-        quitBack()
-    }
-    
-    @objc func segmentedValueChanged(_ sender:UISegmentedControl!){
-        presenter.prepareForGetMovieList(type: sender.selectedSegmentIndex)
-    }
-    
-    @objc func openMenu(){
-        presenter.prepareForProfile()
+        presenter.prepareForGetMovies()
     }
 }
 
-extension MoviesViewController: MoviesViewControllerProtocol {
+extension ProfileViewController: ProfileViewControllerProtocol {
     func updateView() {
-        items = presenter.movies
         collectionView.reloadData()
     }
+    
+    
 }
 
-extension MoviesViewController : UICollectionViewDataSource{
+extension ProfileViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return presenter.movies.count
     }
@@ -90,11 +86,11 @@ extension MoviesViewController : UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.prepareForMovieDetail(movie: items[indexPath.row])
+        //presenter.prepareForMovieDetail(movie: items[indexPath.row])
     }
 }
 
-extension MoviesViewController : UICollectionViewDelegateFlowLayout{
+extension ProfileViewController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 20, left: 5, bottom: 5, right: 5)
     }

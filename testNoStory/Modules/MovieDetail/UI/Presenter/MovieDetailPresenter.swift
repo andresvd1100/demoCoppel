@@ -17,6 +17,7 @@ protocol MovieDetailPresenterProtocol {
     func setViewProtocol(view: MovieDetailViewControllerProtocol)
     func prepareFotGetDetailMovie()
     func prepareForGetCrew()
+    func prepareForAddToFavorites()
 }
 
 class MovieDetailPresenter {
@@ -76,6 +77,14 @@ extension MovieDetailPresenter: MovieDetailPresenterProtocol {
         interactor.fetchToGetCrew {
             DispatchQueue.main.async { [weak self] in
                 self?.viewProtocol?.updateViewCrew()
+            }
+        }
+    }
+    
+    func prepareForAddToFavorites() {
+        interactor.saveMovieToFavorites { result in
+            DispatchQueue.main.async { [weak self] in
+                self?.viewProtocol?.showAlert(message: Constants.Messages.addFavorites)
             }
         }
     }

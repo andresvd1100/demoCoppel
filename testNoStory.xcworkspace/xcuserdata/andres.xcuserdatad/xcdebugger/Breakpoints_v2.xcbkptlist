@@ -190,8 +190,8 @@
             filePath = "testNoStory/Modules/Login/Data/LoginDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "fetchToLoginService(user:pass:onSuccess:onBadResponse:onError:)"
             landmarkType = "7">
             <Locations>
@@ -318,8 +318,8 @@
             filePath = "testNoStory/Modules/MovieDetail/Data/MovieDetailDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "getDiscoverData(movie:onScucess:onError:)"
             landmarkType = "7">
             <Locations>

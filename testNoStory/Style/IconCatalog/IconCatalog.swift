@@ -15,4 +15,6 @@ struct IconCatalog {
     var menu: UIImage { UIImage(named: "menu") ?? UIImage() }
     var cast: UIImage { UIImage(named: "cast") ?? UIImage() }
     var profile: UIImage { UIImage(named: "profile") ?? UIImage() }
+    var favorites: UIImage { UIImage(named: "add_favorites") ?? UIImage() }
+    var favoritesFill: UIImage { UIImage(named: "add_favorites_fill") ?? UIImage() }
 }

@@ -15,6 +15,7 @@ protocol MoviesPresenterProtocol {
     func setViewProtocol(view: MoviesViewControllerProtocol)
     func prepareForGetMovieList(type: Int)
     func prepareForMovieDetail(movie: Movie)
+    func prepareForProfile()
 }
 
 class MoviesPresenter {
@@ -51,5 +52,9 @@ extension MoviesPresenter: MoviesPresenterProtocol {
     
     func prepareForMovieDetail(movie: Movie) {
         router.openMovieDetail(movie: movie)
+    }
+    
+    func prepareForProfile() {
+        router.openProfile()
     }
 }

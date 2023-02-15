@@ -23,6 +23,9 @@ struct Constants{
     struct ButtonTitles {
         // MARK: LOGIN
         static let login = "Login"
+        static let closeSession = "Cerrar sesion"
+        static let addFavorites = "Agregar a favoritos"
+        static let deleteFavorites = "Eliminar de favoritos"
     }
     
     struct Titles {
@@ -36,6 +39,10 @@ struct Constants{
         static let ingresos = "Ingresos"
         static let cast = "Reparto"
         static let crew = "Equipo"
+    }
+    
+    struct Messages{
+        static let addFavorites = "Has agregado esta pelicula a tus favoritos"
     }
     
     struct SegmentedTitles{

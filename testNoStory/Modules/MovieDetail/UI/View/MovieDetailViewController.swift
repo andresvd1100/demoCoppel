@@ -10,11 +10,16 @@ import UIKit
 protocol MovieDetailViewControllerProtocol: AnyObject {
     func updateViewBasic()
     func updateViewCrew()
-    
+    func showAlert(message: String)
 }
 
 class MovieDetailViewController: UIViewController {
     
+    @IBOutlet weak var btnAddFavorites: UIButton!{
+        didSet{
+            configureButton(button: btnAddFavorites, title: Constants.ButtonTitles.addFavorites, image: Style.iconCatalog.favorites, backgroundColor: Style.colorSystem.neutral.gray2)
+        }
+    }
     @IBOutlet weak var tableView: UITableView!{
         didSet{
             tableView.backgroundColor = Style.colorSystem.neutral.transparent
@@ -101,6 +106,9 @@ class MovieDetailViewController: UIViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
     }
+    @IBAction func addFavorites(_ sender: Any) {
+        presenter.prepareForAddToFavorites()
+    }
 }
 
 extension MovieDetailViewController: MovieDetailViewControllerProtocol {
@@ -118,6 +126,10 @@ extension MovieDetailViewController: MovieDetailViewControllerProtocol {
     }
     func updateViewCrew() {
         tableView.reloadData()
+    }
+    
+    func showAlert(message: String) {
+        
     }
 }
 
