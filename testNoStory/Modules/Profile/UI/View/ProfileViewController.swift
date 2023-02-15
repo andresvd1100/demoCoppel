@@ -64,6 +64,10 @@ class ProfileViewController: UIViewController {
         collectionView.reloadData()
         presenter.prepareForGetMovies()
     }
+    
+    @IBAction func closeSession(_ sender: Any) {
+        presenter.prepareForCloseSession()
+    }
 }
 
 extension ProfileViewController: ProfileViewControllerProtocol {

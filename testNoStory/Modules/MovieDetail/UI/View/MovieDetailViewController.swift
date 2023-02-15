@@ -17,7 +17,7 @@ class MovieDetailViewController: UIViewController {
     
     @IBOutlet weak var btnAddFavorites: UIButton!{
         didSet{
-            configureButton(button: btnAddFavorites, title: Constants.ButtonTitles.addFavorites, image: Style.iconCatalog.favorites, backgroundColor: Style.colorSystem.neutral.gray2)
+            configureButton(button: btnAddFavorites, image: Style.iconCatalog.favorites, backgroundColor: Style.colorSystem.neutral.transparent)
         }
     }
     @IBOutlet weak var tableView: UITableView!{
@@ -129,7 +129,7 @@ extension MovieDetailViewController: MovieDetailViewControllerProtocol {
     }
     
     func showAlert(message: String) {
-        
+        btnAddFavorites.setImage(Style.iconCatalog.favoritesFill, for: .normal)
     }
 }
 

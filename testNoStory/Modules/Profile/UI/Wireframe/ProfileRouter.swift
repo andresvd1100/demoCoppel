@@ -10,6 +10,7 @@ import UIKit
 
 protocol ProfileRouterProtocol {
     func showScreen(presenter: ProfilePresenterProtocol)
+    func logOut()
 }
 
 class ProfileRouter {
@@ -26,5 +27,16 @@ extension ProfileRouter: ProfileRouterProtocol {
         guard let controller = baseController as? UINavigationController else { return }
         let viewController = ProfileViewController(presenter: presenter)
         controller.pushViewController(viewController, animated: true)
+    }
+    
+    func logOut() {
+        
+       
+        let navigation = UINavigationController()
+        Singleton.shared.ereaseAll()
+        let login = LoginModule(baseViewController: navigation)
+        baseController?.dismiss(animated: true, completion: {
+            login.showScreen()
+        })
     }
 }

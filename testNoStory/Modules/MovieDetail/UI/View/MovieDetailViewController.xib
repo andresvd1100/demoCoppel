@@ -107,8 +107,9 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4G-4S-N99">
-                                    <rect key="frame" x="4" y="259" width="183.33333333333334" height="35"/>
+                                    <rect key="frame" x="70.666666666666657" y="259" width="50" height="35"/>
                                     <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="9yj-zq-7th"/>
                                         <constraint firstAttribute="height" constant="35" id="RaM-dc-XXa"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
@@ -123,7 +124,6 @@
                                 <constraint firstItem="yLd-OG-rFs" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="0IV-cB-KpX"/>
                                 <constraint firstItem="iw6-UT-eCC" firstAttribute="top" secondItem="yum-LN-Zv4" secondAttribute="bottom" constant="8" id="1ia-JC-Mz1"/>
                                 <constraint firstItem="yum-LN-Zv4" firstAttribute="top" secondItem="ZqQ-Yo-uuT" secondAttribute="bottom" constant="8" id="7NP-Zd-hVq"/>
-                                <constraint firstItem="C4G-4S-N99" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="4" id="C5p-Xj-3W7"/>
                                 <constraint firstAttribute="trailing" secondItem="sgR-qm-bJo" secondAttribute="trailing" constant="2" id="CAp-8Q-Pm6"/>
                                 <constraint firstItem="yLd-OG-rFs" firstAttribute="top" secondItem="ody-WO-mCv" secondAttribute="bottom" constant="8" id="Drp-f1-5GH"/>
                                 <constraint firstAttribute="trailing" secondItem="yum-LN-Zv4" secondAttribute="trailing" constant="2" id="Gie-a7-8Z6"/>
@@ -135,6 +135,7 @@
                                 <constraint firstAttribute="trailing" secondItem="ody-WO-mCv" secondAttribute="trailing" constant="2" id="Tkm-8K-UUf"/>
                                 <constraint firstItem="ZqQ-Yo-uuT" firstAttribute="top" secondItem="0jt-NI-KNr" secondAttribute="top" constant="8" id="U6h-3i-sZG"/>
                                 <constraint firstItem="ody-WO-mCv" firstAttribute="top" secondItem="mRT-Jb-Pax" secondAttribute="bottom" constant="8" id="W6K-VF-hfy"/>
+                                <constraint firstItem="C4G-4S-N99" firstAttribute="centerX" secondItem="0jt-NI-KNr" secondAttribute="centerX" id="YgQ-rG-GJX"/>
                                 <constraint firstItem="mRT-Jb-Pax" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="a36-3g-aOd"/>
                                 <constraint firstItem="mRT-Jb-Pax" firstAttribute="top" secondItem="sgR-qm-bJo" secondAttribute="bottom" constant="8" id="aNj-LH-QfB"/>
                                 <constraint firstAttribute="trailing" secondItem="mRT-Jb-Pax" secondAttribute="trailing" constant="2" id="acw-um-lbL"/>
@@ -143,7 +144,6 @@
                                 <constraint firstAttribute="trailing" secondItem="ZqQ-Yo-uuT" secondAttribute="trailing" constant="2" id="m68-Nh-MgI"/>
                                 <constraint firstItem="4IV-zF-AzM" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="nLc-BE-MIq"/>
                                 <constraint firstItem="4IV-zF-AzM" firstAttribute="top" secondItem="UCt-dr-X4f" secondAttribute="bottom" constant="8" id="nc5-0z-MDr"/>
-                                <constraint firstAttribute="trailing" secondItem="C4G-4S-N99" secondAttribute="trailing" constant="4" id="oj0-Ut-Uhu"/>
                                 <constraint firstItem="UCt-dr-X4f" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="pqy-JP-tXc"/>
                                 <constraint firstItem="yum-LN-Zv4" firstAttribute="leading" secondItem="0jt-NI-KNr" secondAttribute="leading" constant="2" id="qvG-Ia-cCQ"/>
                                 <constraint firstAttribute="trailing" secondItem="UCt-dr-X4f" secondAttribute="trailing" constant="2" id="sih-jA-a2P"/>

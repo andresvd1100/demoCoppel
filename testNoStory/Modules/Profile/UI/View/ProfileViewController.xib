@@ -40,6 +40,9 @@
                     <rect key="frame" x="202" y="227.33333333333334" width="189" height="35.000000000000028"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="closeSession:" destination="-1" eventType="touchUpInside" id="I7M-J5-uuJ"/>
+                    </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-l7-jJL">
                     <rect key="frame" x="0.0" y="282.33333333333331" width="393" height="535.66666666666674"/>

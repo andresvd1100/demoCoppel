@@ -13,7 +13,7 @@ protocol ProfilePresenterProtocol {
     func showScreen()
     func setViewProtocol(view: ProfileViewControllerProtocol)
     func prepareForGetMovies()
-    
+    func prepareForCloseSession()
 }
 
 class ProfilePresenter {
@@ -52,6 +52,10 @@ extension ProfilePresenter: ProfilePresenterProtocol {
             print("\(error)")
         }
 
+    }
+    
+    func prepareForCloseSession() {
+        router.logOut()
     }
     
 }
